@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import sys
+import clingo
+from tefoli.cldl import ApplicationDL
+
+# ----------------------------------------------------------------------------------------
+#
+# ----------------------------------------------------------------------------------------
+
+sys.exit(int(clingo.clingo_main(ApplicationDL("pyclingo-dl"), sys.argv[1:])))
